@@ -1,0 +1,45 @@
+
+/* ---- overview ---- */
+.card-small{
+    padding: 1.7em;
+    display: grid;
+    background: var(--card-gray);
+    border-radius: 8px;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7em;
+}
+
+.card-small p {
+    margin: 0;
+}
+
+.card-small-views{
+    color: var(--gray);
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.card-small-icon{
+    text-align: right;
+}
+
+.card-small-number{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.card-small-percentage{
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    color: var(--Lime-Green);
+    justify-content: flex-end;
+}
+.card-small-percentage img{
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.is-danger {
+    color: var(--Bright-Red);
+}

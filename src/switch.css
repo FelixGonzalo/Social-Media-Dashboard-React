@@ -1,0 +1,46 @@
+.header__darkMode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .darkMode-checkbox {
+    display: none;
+  }
+  
+  .darkMode-checkbox:checked ~ .switch:before{
+    transform: translateX(30px);
+  }
+  
+  .switch {
+    height: 30px;
+    width: 60px;
+    display: block;
+    border-radius: 20px;
+    background: linear-gradient(to right, var(--modoOscuro) 0% , var(--modoOscuro2) 100% );
+    box-sizing: border-box;
+    padding: 3px;
+    cursor: pointer;
+  }
+  
+  .switch:before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: var(--gray-dark);
+    border-radius: 100%;
+    transform: translateX(0px);
+    transition: .3s;
+  }
+  
+  /*@media (prefers-color-scheme: dark) { */
+.modoOscuro{
+  background: #191e25;
+  color: white;
+  --gray: #9698a0;
+  --card-gray: #252b43;
+  --header-gray:#1f222b;
+  --modoOscuro: rgb(67, 73, 95);
+  --modoOscuro2:rgb(43, 62, 233);
+}
